@@ -46,4 +46,25 @@ public class MaximumNumberTest {
         MaximumNumber maximumFloatNumber = new MaximumNumber(3.3f, 2.3f, 4.5f);
         Assert.assertEquals(4.5f,maximumFloatNumber.maximum());
     }
+
+    //TC 3.1 - Maximum String at First Position return the Same String
+    @Test
+    public void getMaximumStringAtFirstPosition(){
+        MaximumNumber maximumString = new MaximumNumber("Tushar","Aniket","Sai");
+        Assert.assertEquals("Tushar",maximumString.maximum());
+    }
+
+    //TC 3.2 - Maximum String at First Position return the Same String
+    @Test
+    public void getMaximumStringAtSecondPosition(){
+        MaximumNumber maximumString = new MaximumNumber("Aniket","Tushar","Sai");
+        Assert.assertEquals("Tushar", maximumString.maximum());
+    }
+
+    //TC 3.3 - Maximum String at Third Position return the Same String
+    @Test
+    public void getMaximumStringAtThirdPosition(){
+        MaximumNumber maximumString = new MaximumNumber("Sai","Aniket","Tushar");
+        Assert.assertEquals("Tushar",maximumString.maximum());
+    }
 }

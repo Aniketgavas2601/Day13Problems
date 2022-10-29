@@ -11,10 +11,6 @@ public class MaximumNumber<A extends Comparable<A>> {
         this.c = c;
     }
 
-    public MaximumNumber() {
-
-    }
-
     public A maximum(){
         if((a.compareTo(b) > 0) && (a.compareTo(c) >0)){
           return a;
